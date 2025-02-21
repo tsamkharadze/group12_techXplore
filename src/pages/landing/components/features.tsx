@@ -16,31 +16,37 @@ const Features = () => {
             icon={Car}
             title={t("landing-translation.feature_1_title")}
             description={t("landing-translation.feature_1_desc")}
+            iconClassName="text-red-500"
           />
           <FeatureCard
             icon={Brain}
             title={t("landing-translation.feature_2_title")}
             description={t("landing-translation.feature_2_desc")}
+            iconClassName="text-blue-500"
           />
           <FeatureCard
             icon={Trophy}
             title={t("landing-translation.feature_3_title")}
             description={t("landing-translation.feature_3_desc")}
+            iconClassName="text-green-500"
           />
           <FeatureCard
             icon={FileCheck}
             title={t("landing-translation.feature_4_title")}
             description={t("landing-translation.feature_4_desc")}
+            iconClassName="text-yellow-500"
           />
           <FeatureCard
             icon={Link}
             title={t("landing-translation.feature_5_title")}
             description={t("landing-translation.feature_5_desc")}
+            iconClassName="text-purple-500"
           />
           <FeatureCard
             icon={Leaf}
             title={t("landing-translation.feature_6_title")}
             description={t("landing-translation.feature_6_desc")}
+            iconClassName="text-teal-500"
           />
         </div>
       </div>

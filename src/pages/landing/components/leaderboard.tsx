@@ -21,7 +21,7 @@ export function Leaderboard() {
   const { t } = useTranslation();
 
   return (
-    <Card className="w-full max-w-2xl mx-auto">
+    <Card className="w-full max-w-2xl mx-auto mt-20">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-center">
           {t("landing-translation.leaderboard")}
