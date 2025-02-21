@@ -10,14 +10,14 @@ export const Header = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Brand Name */}
-          <NavLink to="/home" className="text-2xl font-bold text-indigo-600">
+          <NavLink to="/" className="text-2xl font-bold text-indigo-600">
             CarInsure
           </NavLink>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden sm:flex space-x-4">
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) =>
                 `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                   isActive

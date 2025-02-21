@@ -1,0 +1,20 @@
+{
+  "title": "Frequently Asked Questions",
+  "question_1": "What is Pay-Per-Mile Insurance?",
+  "answer_1": "Instead of a fixed monthly premium, you pay based on how much you actually drive.",
+
+  "question_2": "Who is this insurance for?",
+  "answer_2": "Ideal for occasional drivers, remote workers, retirees, students, and those with multiple cars.",
+
+  "question_3": "How is the cost calculated?",
+  "answer_3": "You pay a base fee plus a per-mile rate. Example: $10 base + $0.05 per mile.",
+
+  "question_4": "How is mileage tracked?",
+  "answer_4": "Mileage is tracked via smartphone GPS, OBD-II devices, or connected car APIs.",
+
+  "question_5": "How do I make payments?",
+  "answer_5": "Payments are processed daily, weekly, or monthly through credit card, crypto, or PayPal.",
+
+  "question_6": "Are there any rewards?",
+  "answer_6": "Yes! Earn points for safe driving, participate in leaderboards, and get discounts."
+}
