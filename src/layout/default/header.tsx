@@ -11,7 +11,7 @@ export const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Brand Name */}
           <NavLink to="/" className="text-2xl font-bold text-indigo-600">
-            CarInsure
+            KMsure
           </NavLink>
 
           {/* Desktop Navigation Links */}

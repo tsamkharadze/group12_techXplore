@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center">
           {/* Left-side Content */}
           <div className="text-center sm:text-left mb-4 sm:mb-0">
-            <p className="text-lg font-semibold text-indigo-600">CarInsure</p>
+            <p className="text-lg font-semibold text-indigo-600">KMsure</p>
             <p className="text-gray-500">Your trusted car insurance partner.</p>
           </div>
 
