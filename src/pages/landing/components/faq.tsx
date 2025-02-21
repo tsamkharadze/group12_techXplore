@@ -21,7 +21,7 @@ const FAQSection = () => {
   const icons = [HelpCircle, Car, DollarSign, MapPin, CreditCard, Star];
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-xl">
+    <div className="mt-20 w-full max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-xl">
       <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
         {t("FAQ-translations.title")}
       </h2>
