@@ -8,13 +8,13 @@
   "feature_1_title": "On-Demand Insurance",
   "feature_1_desc": "Start, pause, or cancel insurance anytime with real-time pricing. Pay only for the miles driven.",
   "feature_2_title": "AI-Powered Risk Assessment",
-  "feature_2_desc": "AI analyzes driving behavior via phone sensors or OBD-II device. Safer driving means better discounts.",
+  "feature_2_desc": "AI analyzes driving behavior via phone sensors. Safer driving means better discounts.",
   "feature_3_title": "Gamified Rewards",
   "feature_3_desc": "Earn points for safe driving and compete with friends. Redeem for discounts and cashback.",
   "feature_4_title": "Instant Claims",
   "feature_4_desc": "File claims via the app using AI damage detection and receive instant payouts.",
-  "feature_5_title": "Smart Contracts",
-  "feature_5_desc": "Blockchain smart contracts ensure fair and automated claim processing.",
+  "feature_5_title": "Immutable Records",
+  "feature_5_desc": "Blockchain ensures secure and tamper-proof data storage for reliable record-keeping.",
   "feature_6_title": "Eco-Friendly",
-  "feature_6_desc": "Lower premiums for electric/hybrid cars and option to donate unused insurance to green initiatives."
+  "feature_6_desc": "Lower premiums for electric/hybrid cars and option to donate unused points to green initiatives."
 }

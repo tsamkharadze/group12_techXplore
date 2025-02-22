@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# 🚗 FlexiShield Insurance
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Pay-Per-Mile Car Insurance with Eco-Friendly Rewards**
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FlexiShield is a modern, flexible car insurance app that lets users pay based on the miles they drive. It offers real-time tracking, instant policy activation/cancellation, and rewards for eco-friendly driving.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Pay-Per-Mile Model** – Only pay for the miles you drive.
+- **Instant Policy Activation & Cancellation** – Start, pause, or stop your policy anytime.
+- **Eco-Driving Rewards** – Get discounts for smooth driving & fuel efficiency.
+- **Carbon Offset Program** – Contribute to reforestation & green initiatives.
+- **EV & Hybrid Discounts** – Lower rates for electric & hybrid vehicles.
+- **Seamless Claims Processing** – Upload accident reports & track claim status.
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- **Frontend:** React, TailwindCSS, ShadCN, Radix UI, Embla Carousel
+- **State Management:** React Context / Local Storage
+- **Internationalization:** i18next, react-i18next
+- **Routing:** React Router
+- **Linting & Formatting:** ESLint, Prettier, Husky
+- **Build Tools:** Vite, TypeScript
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```sh
+git clone https://github.com/your-repo/group12-techxplore.git
+cd group12-techxplore
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 💻 Development
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+Start the development server:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+```sh
+npm run dev
+
 ```
+
+## 🔧 Build & Production
+
+To create a production build:
+
+```sh
+npm run build
+
+```
+
+## 🤝 Contributing
+
+- **1.** Fork the repository
+- **2.** Create a feature branch (git checkout -b feature-name)
+- **3.** Commit changes (git commit -m 'Add feature')
+- **4.** Push to branch (git push origin feature-name)
+- **5.** Open a Pull Request
+
+## 🚀 Join the revolution of smart, eco-friendly car insurance! 🌍💚
+
+\
