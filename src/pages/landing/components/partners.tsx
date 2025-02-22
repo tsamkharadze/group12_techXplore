@@ -66,35 +66,37 @@ const PartnersSection = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-xl mt-10">
-      <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
-        {t("Partners-translations.title")}
-      </h2>
+    <div className="py-20">
+      <div className="w-full max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-xl mt-10">
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
+          {t("Partners-translations.title")}
+        </h2>
 
-      <Carousel className="w-full">
-        <CarouselContent className="-ml-1">
-          {partners.map((partner) => (
-            <CarouselItem
-              key={partner.id}
-              className="pl-1 md:basis-1/2 lg:basis-1/4"
-            >
-              <div className="h-full flex flex-col justify-between bg-gray-100 p-6 rounded-lg shadow-md text-center mx-2">
-                <img
-                  src={partner.image}
-                  alt={partner.name}
-                  className="w-24 h-24 mx-auto mb-4 object-contain"
-                />
-                <h3 className="text-lg font-semibold">{partner.name}</h3>
-                <p className="text-sm text-gray-600 flex-grow">
-                  {t(`Partners-translations.offer_${partner.id}`)}
-                </p>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+        <Carousel className="w-full">
+          <CarouselContent className="-ml-1">
+            {partners.map((partner) => (
+              <CarouselItem
+                key={partner.id}
+                className="pl-1 md:basis-1/2 lg:basis-1/4"
+              >
+                <div className="h-full flex flex-col justify-between bg-gray-100 p-6 rounded-lg shadow-md text-center mx-2">
+                  <img
+                    src={partner.image}
+                    alt={partner.name}
+                    className="w-24 h-24 mx-auto mb-4 object-contain"
+                  />
+                  <h3 className="text-lg font-semibold">{partner.name}</h3>
+                  <p className="text-sm text-gray-600 flex-grow">
+                    {t(`Partners-translations.offer_${partner.id}`)}
+                  </p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
     </div>
   );
 };

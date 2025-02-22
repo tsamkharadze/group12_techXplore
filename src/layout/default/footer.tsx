@@ -5,7 +5,7 @@ import { ChangeLanguage } from "./lang-switcher"; // If you want to include a la
 
 export const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-black border-t-[1px]">
+    <footer className="bg-[#18222880] dark:bg-black border-t-[1px]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           {/* Left-side Content */}

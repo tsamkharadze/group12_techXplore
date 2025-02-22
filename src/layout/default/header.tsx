@@ -7,7 +7,7 @@ import logo from "/public/uferuli.png"; // Import your logo
 
 export const Header = () => {
   return (
-    <header className="border-b-[1px] bg-white dark:bg-black">
+    <header className=" bg-[#18222880] dark:bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -23,7 +23,7 @@ export const Header = () => {
               className={({ isActive }) =>
                 `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                   isActive
-                    ? "border-indigo-500 text-gray-900 dark:text-white"
+                    ? "border-indigo-500 text-white dark:text-white"
                     : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 }`
               }
@@ -35,8 +35,8 @@ export const Header = () => {
               className={({ isActive }) =>
                 `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                   isActive
-                    ? "border-indigo-500 text-gray-900 dark:text-white"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "border-indigo-500 text-white dark:text-white"
+                    : "border-transparent text-white hover:border-gray-300 hover:text-gray-700"
                 }`
               }
             >

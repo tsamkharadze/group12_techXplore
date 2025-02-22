@@ -21,32 +21,34 @@ export function Leaderboard() {
   const { t } = useTranslation();
 
   return (
-    <Card className="w-full max-w-2xl mx-auto mt-20">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-center">
-          {t("landing-translation.leaderboard")}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[100px]">#</TableHead>
-              <TableHead>Name</TableHead>
-              <TableHead className="text-right">{t("points")}</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {topDrivers.map((driver) => (
-              <TableRow key={driver.name}>
-                <TableCell className="font-medium">{driver.rank}</TableCell>
-                <TableCell>{driver.name}</TableCell>
-                <TableCell className="text-right">{driver.points}</TableCell>
+    <div className="bg-[#3f4a68] py-20">
+      <Card className="w-full max-w-2xl mx-auto  ">
+        <CardHeader>
+          <CardTitle className="text-2xl font-bold text-center">
+            {t("landing-translation.leaderboard")}
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[100px]">#</TableHead>
+                <TableHead>Name</TableHead>
+                <TableHead className="text-right">{t("points")}</TableHead>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </CardContent>
-    </Card>
+            </TableHeader>
+            <TableBody>
+              {topDrivers.map((driver) => (
+                <TableRow key={driver.name}>
+                  <TableCell className="font-medium">{driver.rank}</TableCell>
+                  <TableCell>{driver.name}</TableCell>
+                  <TableCell className="text-right">{driver.points}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </CardContent>
+      </Card>
+    </div>
   );
 }

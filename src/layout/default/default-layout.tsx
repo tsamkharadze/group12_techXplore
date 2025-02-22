@@ -4,10 +4,10 @@ import { Footer } from "./footer";
 
 export default function DefaultLayout() {
   return (
-    <div className="min-h-screen dark:bg-black bg-gray-100">
+    <div className="min-h-screen dark:bg-black bg-[#37507F]">
       <Header />
-      <main className="py-10">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <main>
+        <div className="mx-auto ">
           <Outlet />
         </div>
       </main>
