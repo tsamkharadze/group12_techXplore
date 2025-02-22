@@ -15,9 +15,20 @@ export function ChangeLanguage() {
     i18n.changeLanguage(language);
   };
 
-  // Define flags
-  const flag = currentLang === "ka" ? "🇬🇪" : "🇬🇧";
-
+  const flag =
+    currentLang === "ka" ? (
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/2880px-Flag_of_Georgia.svg.png"
+        alt="Georgian Flag"
+        className="h-3 w-5"
+      />
+    ) : (
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/2880px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+        alt="UK Flag"
+        className="h-3 w-5"
+      />
+    );
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -27,10 +38,10 @@ export function ChangeLanguage() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => changeLanguage("en")}>
-          🇬🇧 English
+          EN
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => changeLanguage("ka")}>
-          🇬🇪 ქართული
+          KA
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
