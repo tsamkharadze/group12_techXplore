@@ -1,17 +1,19 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router"; // Ensure correct import
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
 import { ChangeLanguage } from "./lang-switcher";
+import logo from "/public/uferuli.png"; // Import your logo
 
 export const Header = () => {
   return (
     <header className="border-b-[1px] bg-white dark:bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Brand Name */}
-          <NavLink to="/" className="text-2xl font-bold text-indigo-600">
-            KMsure
+          {/* Logo */}
+          <NavLink to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Logo" className="h-12 w-auto" />
+            <span className="text-2xl font-bold text-indigo-600">KMsure</span>
           </NavLink>
 
           {/* Desktop Navigation Links */}
