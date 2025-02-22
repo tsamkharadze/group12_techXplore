@@ -10,6 +10,8 @@ import plansEn from "./en/plans.json";
 import plansKa from "./ka/plans.json";
 import headerKa from "./ka/header.json";
 import headerEn from "./en/header.json";
+import footerEn from "./en/footer.json";
+import footerKa from "./ka/footer.json";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -22,6 +24,7 @@ i18n
           "FAQ-translations": FAQka,
           "Partners-translations": partnersKa,
           "plans-translations": plansKa,
+          "footer-translations": footerKa,
         },
       },
       en: {
@@ -31,6 +34,7 @@ i18n
           "FAQ-translations": FAQen,
           "Partners-translations": partnersEn,
           "plans-translations": plansEn,
+          "footer-translations": footerEn,
         },
       },
     },

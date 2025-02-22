@@ -1,15 +1,14 @@
-import { NavLink } from "react-router"; // Ensure correct import
-import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import React from "react";
+import { Menu, Home, FileText } from "lucide-react";
+import { NavLink } from "react-router";
+import logo from "/public/uferuli.png";
 import { ChangeLanguage } from "./lang-switcher";
-import logo from "/public/uferuli.png"; // Import your logo
-import { useTranslation } from "react-i18next";
 
-export const Header = () => {
-  const { t } = useTranslation();
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
-    <header className=" bg-[#18222880] dark:bg-black">
+    <header className="bg-gradient-to-b from-[#17252d80] to-[#08131980] border-b border-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -20,65 +19,62 @@ export const Header = () => {
             </span>
           </NavLink>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden sm:flex space-x-4">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
-                  isActive
-                    ? "border-indigo-500 text-white dark:text-white"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-black"
-                }`
-              }
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <a
+              href="/"
+              className="flex items-center space-x-1 text-gray-300 hover:text-indigo-400"
             >
-              {t("header-translation.home")}
-            </NavLink>
-            <NavLink
-              to="/plans"
-              className={({ isActive }) =>
-                `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
-                  isActive
-                    ? "border-indigo-500 text-white dark:text-white"
-                    : "border-transparent text-white hover:border-gray-300 hover:text-black"
-                }`
-              }
+              <Home className="w-4 h-4" />
+              <span>Home</span>
+            </a>
+            <a
+              href="/plans"
+              className="flex items-center space-x-1  text-gray-300  hover:text-indigo-400"
             >
-              {t("header-translation.plans")}
-            </NavLink>
+              <FileText className="w-4 h-4" />
+              <span>Plans</span>
+            </a>
+            <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105">
+              Get Started
+            </button>
+            <ChangeLanguage />
           </nav>
 
-          {/* Right-side Actions */}
-          <div className="flex items-center space-x-4">
-            <ChangeLanguage />
-          </div>
-
-          {/* Hamburger Menu */}
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="ghost" className="sm:hidden">
-                <Menu className="h-6 w-6" />
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="sm:hidden">
-              <nav className="flex flex-col space-y-4">
-                <NavLink
-                  to="/"
-                  className="text-sm font-medium text-gray-500 hover:text-gray-700"
-                >
-                  {t("header-translation.home")}
-                </NavLink>
-                <NavLink
-                  to="/plans"
-                  className="text-sm font-medium text-gray-500 hover:text-gray-700"
-                >
-                  {t("header-translation.plans")}
-                </NavLink>
-              </nav>
-            </DialogContent>
-          </Dialog>
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden  text-gray-300"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Menu className="w-6 h-6" />
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t  border-gray-800">
+            <nav className="flex flex-col space-y-4">
+              <a
+                href="/"
+                className="flex items-center space-x-2  text-gray-300  hover:text-indigo-400"
+              >
+                <Home className="w-4 h-4" />
+                <span>Home</span>
+              </a>
+              <a
+                href="/plans"
+                className="flex items-center space-x-2  text-gray-300  hover:text-indigo-400"
+              >
+                <FileText className="w-4 h-4" />
+                <span>Plans</span>
+              </a>
+              <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105 w-full">
+                Get Started
+              </button>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
-};
+}

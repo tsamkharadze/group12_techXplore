@@ -15,7 +15,7 @@ const Plans = () => {
   const plans = [
     {
       name: t("plans-translations.plans.basic.name"),
-      price: "0.10",
+      price: "0.05",
       description: t("plans-translations.plans.basic.description"),
       features: t("plans-translations.plans.basic.features", {
         returnObjects: true,
@@ -24,7 +24,7 @@ const Plans = () => {
     },
     {
       name: t("plans-translations.plans.premium.name"),
-      price: "0.15",
+      price: "0.12",
       description: t("plans-translations.plans.premium.description"),
       features: t("plans-translations.plans.premium.features", {
         returnObjects: true,
@@ -34,7 +34,7 @@ const Plans = () => {
     },
     {
       name: t("plans-translations.plans.smart.name"),
-      price: "0.12",
+      price: "0.07",
       description: t("plans-translations.plans.smart.description"),
       features: t("plans-translations.plans.smart.features", {
         returnObjects: true,
@@ -76,7 +76,7 @@ const Plans = () => {
                   <div className="flex items-center justify-between mb-4">
                     <Icon className="w-8 h-8 text-blue-500" />
                     <div className="text-right">
-                      <span className="text-3xl font-bold">${plan.price}</span>
+                      <span className="text-3xl font-bold">₾{plan.price}</span>
                       <span className="text-gray-500">/km</span>
                     </div>
                   </div>

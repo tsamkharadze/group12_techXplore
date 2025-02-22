@@ -1,0 +1,18 @@
+{
+  "trialTitle": "Try KMsure Free for 30 Days",
+  "trialDescription": "Pay only for the kilometers you drive",
+  "trialButton": "Start Free Trial",
+  "companyName": "KMsure",
+  "companyDescription": "Revolutionary pay-per-kilometer car insurance that puts you in control of your coverage.",
+  "newsletterTitle": "Stay Updated",
+  "newsletterPlaceholder": "Enter your email",
+  "newsletterButton": "Subscribe",
+  "newsletterDescription": "Get exclusive offers and updates on our latest features",
+  "contactTitle": "Contact Us",
+  "contactAddress": "123 Chavchavadze Ave",
+  "contactEmail": "support@kmsure.com",
+  "privacyPolicy": "Privacy Policy",
+  "termsService": "Terms of Service",
+  "faq": "FAQ",
+  "copyright": "© {{year}} KMsure. All rights reserved."
+}
