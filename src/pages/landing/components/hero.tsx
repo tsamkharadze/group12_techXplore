@@ -18,30 +18,43 @@ const Hero = () => {
             <p className="text-lg sm:text-xl md:text-2xl text-[#3d2454] mb-6 md:mb-8">
               {t("landing-translation.hero_subtitle")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
-              <a
-                href="https://www.apple.com/app-store/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
-                  alt="Get it on Google Play"
-                  className="h-[40px] sm:h-[50px] md:h-[60px]"
-                />
-              </a>
-              <a
-                href="https://play.google.com/store"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                  alt="Get it on Google Play"
-                  className="h-[40px] sm:h-[50px] md:h-[60px]"
-                />
-              </a>
+            <div className="flex flex-col gap-2">
+              <iframe
+                className="rounded-lg"
+                width="90%"
+                height="315"
+                src="https://www.youtube.com/embed/UvXuwI-TYmA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
+                <a
+                  href="https://www.apple.com/app-store/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+                    alt="Get it on Google Play"
+                    className="h-[40px] sm:h-[50px] md:h-[60px]"
+                  />
+                </a>
+                <a
+                  href="https://play.google.com/store"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Get it on Google Play"
+                    className="h-[40px] sm:h-[50px] md:h-[60px]"
+                  />
+                </a>
+              </div>
             </div>
+            <div className="mb-8 "></div>
             <ArrowDown className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mt-12 md:mt-16 animate-bounce text-[#661BAD] " />
           </div>
         </div>
