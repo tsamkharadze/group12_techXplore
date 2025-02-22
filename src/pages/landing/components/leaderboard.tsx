@@ -21,7 +21,7 @@ export function Leaderboard() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-gradient-to-r from-[#042145] to-[#1f698c] py-20">
+    <div className="bg-gradient-to-r from-[#346198] to-[#1f698c] py-20">
       <Card className="w-full max-w-2xl mx-auto  ">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">

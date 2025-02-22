@@ -8,14 +8,14 @@ const Hero = () => {
       className="relative h-screen bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: "url('/insurance2.png')" }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-800/30 to-transparent" />
       <div className="relative h-full flex items-center">
         <div className="container mx-auto px-4">
-          <div className="max-w-xl text-left text-white">
+          <div className="max-w-xl text-left text-[#661BAD]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               {t("landing-translation.hero_title")}
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 md:mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl text-[#3d2454] mb-6 md:mb-8">
               {t("landing-translation.hero_subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
@@ -42,7 +42,7 @@ const Hero = () => {
                 />
               </a>
             </div>
-            <ArrowDown className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mt-12 md:mt-16 animate-bounce text-white" />
+            <ArrowDown className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mt-12 md:mt-16 animate-bounce text-[#661BAD] " />
           </div>
         </div>
       </div>
