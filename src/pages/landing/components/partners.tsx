@@ -67,7 +67,7 @@ const PartnersSection = () => {
 
   return (
     <div className="py-20">
-      <div className="w-full max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-xl mt-10">
+      <div className="w-full max-w-7xl mx-auto p-6bg-gradient-to-r from-[#0197C4] to-[#A7C9E9] shadow-lg rounded-xl mt-10">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
           {t("Partners-translations.title")}
         </h2>

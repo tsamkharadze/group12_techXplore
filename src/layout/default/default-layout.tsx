@@ -4,7 +4,7 @@ import { Footer } from "./footer";
 
 export default function DefaultLayout() {
   return (
-    <div className="min-h-screen dark:bg-black bg-[#37507F]">
+    <div className="min-h-screen  bg-gradient-to-r from-[#03264a] to-[#32ADE6]">
       <Header />
       <main>
         <div className="mx-auto ">

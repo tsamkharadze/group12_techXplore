@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       className="relative h-screen bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: "url('/insurance.png')" }}
+      style={{ backgroundImage: "url('/insurance2.png')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent" />
       <div className="relative h-full flex items-center">
