@@ -19,10 +19,10 @@ const Hero = () => {
               {t("landing-translation.hero_subtitle")}
             </p>
             <div className="flex flex-col gap-2">
-              <div className="relative m:w-[80%] pb-[56.25%]">
+              <div className="relative w-[93.5%] m:w-[70%] pb-[56.25%]">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
-                  src="https://www.youtube.com/embed/UvXuwI-TYmA"
+                  src="https://www.youtube.com/embed/Jt9hVFks2WM"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
