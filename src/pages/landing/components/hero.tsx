@@ -19,16 +19,17 @@ const Hero = () => {
               {t("landing-translation.hero_subtitle")}
             </p>
             <div className="flex flex-col gap-2">
-              <iframe
-                className="rounded-lg"
-                width="90%"
-                height="315"
-                src="https://www.youtube.com/embed/UvXuwI-TYmA"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <div className="relative m:w-[80%] pb-[56.25%]">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/UvXuwI-TYmA"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start">
                 <a
                   href="https://www.apple.com/app-store/"
