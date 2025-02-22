@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
 import { ChangeLanguage } from "./lang-switcher";
 import logo from "/public/uferuli.png"; // Import your logo
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  const { t } = useTranslation();
   return (
     <header className=" bg-[#18222880] dark:bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -26,11 +28,11 @@ export const Header = () => {
                 `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                   isActive
                     ? "border-indigo-500 text-white dark:text-white"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-black"
                 }`
               }
             >
-              Home
+              {t("header-translation.home")}
             </NavLink>
             <NavLink
               to="/plans"
@@ -38,18 +40,17 @@ export const Header = () => {
                 `inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                   isActive
                     ? "border-indigo-500 text-white dark:text-white"
-                    : "border-transparent text-white hover:border-gray-300 hover:text-gray-700"
+                    : "border-transparent text-white hover:border-gray-300 hover:text-black"
                 }`
               }
             >
-              Plans
+              {t("header-translation.plans")}
             </NavLink>
           </nav>
 
           {/* Right-side Actions */}
           <div className="flex items-center space-x-4">
             <ChangeLanguage />
-            <Button>Sign In</Button>
           </div>
 
           {/* Hamburger Menu */}
@@ -65,13 +66,13 @@ export const Header = () => {
                   to="/"
                   className="text-sm font-medium text-gray-500 hover:text-gray-700"
                 >
-                  Home
+                  {t("header-translation.home")}
                 </NavLink>
                 <NavLink
                   to="/plans"
                   className="text-sm font-medium text-gray-500 hover:text-gray-700"
                 >
-                  Plans
+                  {t("header-translation.plans")}
                 </NavLink>
               </nav>
             </DialogContent>

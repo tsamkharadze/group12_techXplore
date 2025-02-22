@@ -1,0 +1,47 @@
+{
+  "title": "Choose Your Coverage Plan",
+  "description": "Pay only for the kilometers you drive. Our flexible plans adapt to your lifestyle, ensuring you never overpay for insurance again.",
+  "plans": {
+    "basic": {
+      "name": "Basic Coverage",
+      "price": "0.10",
+      "description": "Perfect for occasional drivers",
+      "features": [
+        "Pay only for kilometers driven",
+        "Basic liability coverage",
+        "24/7 roadside assistance",
+        "Mobile app tracking"
+      ]
+    },
+    "premium": {
+      "name": "Premium Protection",
+      "price": "0.15",
+      "description": "Comprehensive coverage for peace of mind",
+      "features": [
+        "All Basic Coverage features",
+        "Comprehensive insurance",
+        "Theft protection",
+        "Natural disaster coverage"
+      ],
+      "popular": "Most Popular"
+    },
+    "smart": {
+      "name": "Smart Driver",
+      "price": "0.12",
+      "description": "Rewards safe driving habits",
+      "features": [
+        "Usage-based pricing",
+        "Safe driver rewards",
+        "Advanced trip analytics",
+        "Family driver tracking"
+      ]
+    }
+  },
+  "standard_features": "All plans include our standard features:",
+  "features_list": [
+    "Secure GPS Tracking",
+    "24/7 Customer Support",
+    "Instant Policy Changes"
+  ],
+  "get_started": "Get Started"
+}

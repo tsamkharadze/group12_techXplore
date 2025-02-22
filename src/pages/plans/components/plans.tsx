@@ -8,58 +8,50 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
-const plans = [
-  {
-    name: "Basic Coverage",
-    price: "0.10",
-    description: "Perfect for occasional drivers",
-    features: [
-      "Pay only for kilometers driven",
-      "Basic liability coverage",
-      "24/7 roadside assistance",
-      "Mobile app tracking",
-    ],
-    icon: Car,
-  },
-  {
-    name: "Premium Protection",
-    price: "0.15",
-    description: "Comprehensive coverage for peace of mind",
-    features: [
-      "All Basic Coverage features",
-      "Comprehensive insurance",
-      "Theft protection",
-      "Natural disaster coverage",
-    ],
-    icon: Shield,
-    popular: true,
-  },
-  {
-    name: "Smart Driver",
-    price: "0.12",
-    description: "Rewards safe driving habits",
-    features: [
-      "Usage-based pricing",
-      "Safe driver rewards",
-      "Advanced trip analytics",
-      "Family driver tracking",
-    ],
-    icon: Gauge,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Plans = () => {
+  const { t } = useTranslation();
+  const plans = [
+    {
+      name: t("plans-translations.plans.basic.name"),
+      price: "0.10",
+      description: t("plans-translations.plans.basic.description"),
+      features: t("plans-translations.plans.basic.features", {
+        returnObjects: true,
+      }) as string[],
+      icon: Car,
+    },
+    {
+      name: t("plans-translations.plans.premium.name"),
+      price: "0.15",
+      description: t("plans-translations.plans.premium.description"),
+      features: t("plans-translations.plans.premium.features", {
+        returnObjects: true,
+      }) as string[],
+      icon: Shield,
+      popular: true,
+    },
+    {
+      name: t("plans-translations.plans.smart.name"),
+      price: "0.12",
+      description: t("plans-translations.plans.smart.description"),
+      features: t("plans-translations.plans.smart.features", {
+        returnObjects: true,
+      }) as string[],
+      icon: Gauge,
+    },
+  ];
+
   return (
     <div className="bg-gray-50 py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Choose Your Coverage Plan
+            {t("plans-translations.title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pay only for the kilometers you drive. Our flexible plans adapt to
-            your lifestyle, ensuring you never overpay for insurance again.
+            {t("plans-translations.description")}
           </p>
         </div>
 
@@ -109,7 +101,7 @@ const Plans = () => {
                         : "bg-gray-900 hover:bg-gray-800"
                     }`}
                   >
-                    Get Started
+                    {t("plans-translations.get_started")}{" "}
                   </Button>
                 </CardFooter>
               </Card>
@@ -119,17 +111,20 @@ const Plans = () => {
 
         <div className="mt-16 text-center">
           <p className="text-gray-600 mb-4">
-            All plans include our standard features:
+            {t("plans-translations.standard_features")}{" "}
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             <span className="flex items-center gap-2">
-              <Shield className="w-4 h-4" /> Secure GPS Tracking
+              <Shield className="w-4 h-4" />{" "}
+              {t("plans-translations.features_list.0")}
             </span>
             <span className="flex items-center gap-2">
-              <Smartphone className="w-4 h-4" /> 24/7 Customer Support
+              <Smartphone className="w-4 h-4" />{" "}
+              {t("plans-translations.features_list.1")}
             </span>
             <span className="flex items-center gap-2">
-              <Car className="w-4 h-4" /> Instant Policy Changes
+              <Car className="w-4 h-4" />{" "}
+              {t("plans-translations.features_list.2")}
             </span>
           </div>
         </div>
