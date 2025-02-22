@@ -13,7 +13,9 @@ export const Header = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2">
             <img src={logo} alt="Logo" className="h-12 w-auto" />
-            <span className="text-2xl font-bold text-indigo-600">KMsure</span>
+            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007aff] to-[#32ADE6]">
+              KMsure
+            </span>
           </NavLink>
 
           {/* Desktop Navigation Links */}
