@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 
 const Features = () => {
   const { t } = useTranslation();
-  console.log(t("landing-translation.feature_1_title"));
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-[#346198] to-[#1f698c]">
       <div className="max-w-7xl mx-auto">
